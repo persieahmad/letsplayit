@@ -11,7 +11,7 @@ export default function StartQuiz() {
   return (
     <>
       {!showQuiz && (
-        <div>
+        <div style={{ marginTop: 100 }}>
           <div style={{ display: 'flex', justifyContent: 'center' }}>
             <RubberBand>
               <Typography
@@ -28,7 +28,7 @@ export default function StartQuiz() {
                 variant="h6"
                 component="h3"
                 style={{ display: 'flex', textAlign: 'center', margin: 20 }}>
-                You will have to answer 10 question in 60 secs. <br /> Each question contains 4
+                You will have to answer 10 question in 50 secs. <br /> Each question contains 4
                 options.
               </Typography>
             </LightSpeed>
