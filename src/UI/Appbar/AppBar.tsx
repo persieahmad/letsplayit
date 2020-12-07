@@ -38,7 +38,9 @@ export default function ButtonAppBar() {
           <Typography variant="h6" className={classes.title}>
             Lets Play It
           </Typography>
-          <GitHubIcon className={classes.github} />
+          <div onClick={() => window.open('https://github.com/persieahmad/letsplayit', '_blank')}>
+            <GitHubIcon className={classes.github} />
+          </div>
         </Toolbar>
       </AppBar>
     </div>
