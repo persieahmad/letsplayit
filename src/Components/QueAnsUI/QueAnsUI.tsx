@@ -21,7 +21,9 @@ export default function QueAnsUI({
   return (
     <Fade bottom>
       <div style={{ marginTop: 100 }}>
-        <h2 style={{ display: 'flex', justifyContent: 'center' }}>Que: {QueAnsArray[i].que}</h2>
+        <h2 style={{ display: 'flex', justifyContent: 'center' }}>
+          Q. {QueAnsArray[i].id}: {QueAnsArray[i].que}
+        </h2>
         {QueAnsArray[i].options.map((opt: string, index) => (
           <div key={index} style={{ display: 'flex', flexDirection: 'column', margin: 40 }}>
             <Button onClick={() => onAnswer(opt)} variant="contained" color="primary">
